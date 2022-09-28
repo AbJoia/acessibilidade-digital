@@ -1,0 +1,35 @@
+
+#decrease img{
+    width: 1.4rem;
+}
+
+.default-icons-width{      
+    width: 2rem;    
+}
+
+.invert-colors{
+    filter: invert(100%);
+}
+
+.invert-colors-dark{
+    filter: invert(100%);
+}
+
+.invert-colors-dark:focus-visible{
+    filter: invert(0%);
+    background-color: #7395d3;
+}
+
+.dark-mode-style{
+    background-color: #111;
+    color: #fff;
+}
+
+.dark-mode-style:focus-visible, .dropdown-menu li > .dark-mode-style:hover{
+    background-color: #7395d3 !important; 
+}
+
+button:focus-visible, a:focus-visible, li:focus-visible {
+    outline: 4px solid #7395d3 !important;  
+}
+
