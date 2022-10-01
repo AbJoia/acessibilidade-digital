@@ -12,12 +12,11 @@ const logoSerratec = document.getElementById('logo-serratec');
 const botaoAumentarFonte = document.getElementById('increase');
 const botaoDiminuirFonte = document.getElementById('decrease');
 const botaoContraste = document.getElementById('contraste');
+const span = document.getElementsByTagName('span');
+const label = document.getElementsByTagName('label');
 const input = document.getElementsByTagName('input');
 const textarea = document.getElementsByTagName('textarea');
 let darkMode = JSON.parse(localStorage.getItem('darkMode'));
-
-var fontSize = 100
-var increaseDecrease = 10
 
 if(darkMode){
     aplicarDarkMode()
@@ -161,52 +160,99 @@ function aplicarTema(event){
 
 function aumentarFonte(event){
     if(event instanceof KeyboardEvent && event.key !== 'Enter') return;
-    fontSize = fontSize + increaseDecrease
-    body.style.fontSize = fontSize + '%'     
 
-    if(fontSize > 110){
-        for(var i=0; i<a.length; i++){
-            a[i].style.fontSize = fontSize + '%'
-        }
+    for(var i=0; i<a.length; i++){
+        var style = window.getComputedStyle(a[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        a[i].style.fontSize = (+fontSize + 1) + 'px'
+    } 
 
-        for(var i=0; i<p.length; i++){
-            p[i].style.fontSize = fontSize + '%'
-        }
-    }       
+    for(var i=0; i<h1.length; i++){
+        var style = window.getComputedStyle(h1[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        h1[i].style.fontSize = (+fontSize + 1) + 'px'
+    }
     
-    if(fontSize > 130){
-        for(var i=0; i<h2.length; i++){
-            h2[i].style.fontSize = fontSize + '%'
-        } 
+    for(var i=0; i<h2.length; i++){
+        var style = window.getComputedStyle(h2[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        h2[i].style.fontSize = (+fontSize + 1) + 'px'
     }
 
-    if(fontSize > 150){
-        for(var i=0; i<h1.length; i++){
-            h1[i].style.fontSize = (fontSize + 10) + '%'
-        }        
+    for(var i=0; i<p.length; i++){
+        var style = window.getComputedStyle(p[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        p[i].style.fontSize = (+fontSize + 1) + 'px'
+    } 
+    
+    for(var i=0; i<li.length; i++){
+        var style = window.getComputedStyle(li[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        li[i].style.fontSize = (+fontSize + 1) + 'px'
+    } 
+
+    for(var i=0; i<li.length; i++){
+        var style = window.getComputedStyle(li[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        li[i].style.fontSize = (+fontSize + 1) + 'px'
+    }
+
+    for(var i=0; i<label.length; i++){
+        var style = window.getComputedStyle(label[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        label[i].style.fontSize = (+fontSize + 1) + 'px'
+    }
+
+    for(var i=0; i<span.length; i++){
+        var style = window.getComputedStyle(span[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        span[i].style.fontSize = (+fontSize + 1) + 'px'
     }
 }
 
 function diminuirFonte(event){
     if(event instanceof KeyboardEvent && event.key !== 'Enter') return;
-    fontSize = fontSize - increaseDecrease  
-    console.log(fontSize)  
-    body.style.fontSize = fontSize + '%'
 
-    for(var i=0; i<a.length; i++){        
-        a[i].style.fontSize = fontSize + '%'
+    for(var i=0; i<a.length; i++){
+        var style = window.getComputedStyle(a[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        a[i].style.fontSize = (fontSize - 1) + 'px'
     } 
 
     for(var i=0; i<h1.length; i++){
-        h1[i].style.fontSize = fontSize + '%'
+        var style = window.getComputedStyle(h1[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        h1[i].style.fontSize = (fontSize - 1) + 'px'
     }
     
     for(var i=0; i<h2.length; i++){
-        h2[i].style.fontSize = fontSize + '%'
+        var style = window.getComputedStyle(h2[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        h2[i].style.fontSize = (fontSize - 1) + 'px'
     }
 
     for(var i=0; i<p.length; i++){
-        p[i].style.fontSize = fontSize + '%'
+        var style = window.getComputedStyle(p[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        p[i].style.fontSize = (fontSize - 1) + 'px'
+    }
+
+    for(var i=0; i<li.length; i++){
+        var style = window.getComputedStyle(li[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        li[i].style.fontSize = (+fontSize - 1) + 'px'
+    } 
+
+    for(var i=0; i<label.length; i++){
+        var style = window.getComputedStyle(label[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        label[i].style.fontSize = (+fontSize - 1) + 'px'
+    }
+
+    for(var i=0; i<span.length; i++){
+        var style = window.getComputedStyle(span[i], null);
+        var fontSize = style.getPropertyValue('font-size').split('px')[0];                            
+        span[i].style.fontSize = (+fontSize - 1) + 'px'
     }
 }
 
