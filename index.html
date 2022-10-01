@@ -11,39 +11,27 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!--HEADER-->
-    <header class="container-fluid text-center mt-1 bg-light" id="inicio">
+    <header class="container-fluid text-center mt-1 bg-light">
       <div class="row">
         <div class="col">
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#inicio">Menu</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+              <div class="navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navbar-brand">
                   <li class="nav-item dropdown">
                     <a
                       class="nav-link dropdown-toggle"
-                      href="#"
+                      href="#content"
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
+                      tabindex="0"
                     >
-                      Navegação
+                      MENU
                     </a>
                     <ul class="dropdown-menu">
                       <li>
@@ -57,7 +45,9 @@
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#contraste-content">Contraste</a>
+                        <a class="dropdown-item" href="#contraste-content"
+                          >Contraste</a
+                        >
                       </li>
                       <li>
                         <a
@@ -69,6 +59,21 @@
                       <li>
                         <a class="dropdown-item" href="#instalacaoVLibras"
                           >Instalação VLibras</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#normasDeAcessibilidade"
+                          >Normas de Acessibilidade</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#validarDocumentoHtml"
+                          >Validação de documento HTML</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#contato"
+                          >Fale conosco</a
                         >
                       </li>
                     </ul>
@@ -94,7 +99,7 @@
                 role="button"
                 aria-pressed="false"
                 onclick="diminuirFonte(event)"
-                keyup ="diminuirFonte(event)"
+                keyup="diminuirFonte(event)"
               >
                 <img
                   class="default-icons-width invert-colors"
@@ -113,7 +118,7 @@
                 role="button"
                 aria-pressed="false"
                 onclick="aumentarFonte(event)"
-                keyup ="aumentarFonte(event)"
+                keyup="aumentarFonte(event)"
               >
                 <img
                   class="default-icons-width invert-colors"
@@ -126,13 +131,13 @@
               </button>
             </li>
             <li class="nav-item">
-              <button                
+              <button
                 class="btn border border-secondary p-1"
                 id="contraste"
                 role="button"
                 aria-pressed="false"
                 onclick="aplicarTema(event)"
-                keyup ="aplicarTema(event)"
+                keyup="aplicarTema(event)"
               >
                 <img
                   class="default-icons-width"
@@ -140,7 +145,7 @@
                   role="img"
                   aria-label="Circulo com a metade preto e a outra metade branco representando ajuste de contraste de cores do site"
                   alt="Mudar contraste"
-                  title="Mudar contraste"                  
+                  title="Mudar contraste"
                 />
               </button>
             </li>
@@ -149,18 +154,19 @@
       </div>
     </div>
     <!--HOME-->
-    <div class="container mt-1 text-center">
+    <div class="container mt-1 text-center" id="content">
       <div class="row mt-5 d-flex" style="min-height: 75vh">
         <div class="col">
           <div class="jumbotron">
-            <h1>Acessibilidade Digital</h1>
+            <h1 tabindex="0">Acessibilidade Digital</h1>
             <p class="lead">
               Este site tem como objetivo compartilhar as boas práticas e
-              diretrizes para aplicação de acessibilidade no desenvolvimento
-              de sites.
+              diretrizes para aplicação de acessibilidade no desenvolvimento de
+              sites.
             </p>
           </div>
           <figure
+            class="slideInLeft"
             role="figure"
             aria-label="Logotipo do parque tecnológico de Petrópolis - SerraTec"
           >
@@ -194,7 +200,7 @@
         <header class="row" id="navegacaoViaTab">
           <div class="col">
             <div class="jumbotron">
-              <h2 class="h2">Navegação via TAB</h2>
+              <h2 class="h2" tabindex="0">Navegação via TAB</h2>
               <p class="lead">Orientações</p>
               <hr />
             </div>
@@ -204,23 +210,8 @@
           <div class="col">
             <ol class="list-group list-group-numbered">
               <li class="list-group-item">
-                A navegação dos menus deve seguir a orientação da esquerda para a
-                direita e de cima para baixo.
-              </li>
-              <li class="list-group-item">
-                Todos os menus ou comandos (botões) devem conter o texto
-                alternativo. Exemplo: botão de pesquisa.
-              </li>
-              <li class="list-group-item">
-                Destacar cada menu ou botão com moldura ou invertendo a cor.
-                (sempre aumentando o contraste).
-              </li>
-              <li class="list-group-item">
-                Utilizar nos menus, fonte de fácil leitura. Por exemplo: Calibri,
-                Arial, Tohoma, etc...
-              </li>
-              <li class="list-group-item">
-                Evitar fontes manuscritas ou serifadas.
+                A navegação dos menus deve seguir a orientação da esquerda para
+                a direita e de cima para baixo.
               </li>
             </ol>
           </div>
@@ -230,7 +221,7 @@
         <header class="row mt-5" id="ampliacaoReducaoFonte">
           <div class="col">
             <div class="jumbotron">
-              <h2 class="h2">Ampliação e redução de fontes</h2>
+              <h2 class="h2" tabindex="0">Ampliação e redução de fontes</h2>
               <p class="lead">Orientações</p>
               <hr />
             </div>
@@ -277,44 +268,62 @@
                 As fontes devem iniciar com 24 pixels e possibilitar ampliar e
                 reduzir o seu tamanho.
               </li>
+              <li class="list-group-item">
+                Utilizar nos menus, fonte de fácil leitura. Por exemplo:
+                Calibri, Arial, Tohoma, etc...
+              </li>
+              <li class="list-group-item">
+                Evitar fontes manuscritas ou serifadas.
+              </li>
             </ol>
           </div>
         </div>
-      </section> 
-      <section>    
+      </section>
+      <section>
         <header class="row mt-5" id="contraste-content">
           <div class="col">
             <div class="jumbotron">
-              <h2 class="h2">Contraste</h2>
+              <h2 class="h2" tabindex="0">Contraste</h2>
               <p class="lead">Orientações</p>
               <hr />
             </div>
+          </div>
         </header>
         <div class="row d-flex justify-content-center align-items-end">
           <div class="col d-flex justify-content-center align-items-end">
             <figure
               role="figure"
               aria-label="Imagem em preto e branco demostrando efeitos de contraste."
+              style="width: 60%"
             >
               <img
                 src="./assets/img/image5.jpeg"
                 role="img"
                 alt="Imagem em preto e branco demostrando efeitos de contraste."
                 title="Imagem em preto e branco demostrando efeitos de contraste."
-                width="300px"
+                width="100%"
               />
+              <figcaption>
+                <p class="lead">
+                  Figura: Imagem em preto e branco demostrando efeitos de
+                  contraste.
+                </p>
+              </figcaption>
             </figure>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <ul class="list-group">
+            <ol class="list-group list-group-numbered">
               <li class="list-group-item">
-                Testar contraste nos links abaixo.
+                Destacar cada menu ou botão com moldura ou invertendo a cor.
+                (sempre aumentando o contraste).
               </li>
               <li class="list-group-item">
+                Testar contraste nos links abaixo.
                 <ol class="list-group list-group-numbered">
                   <li class="list-group-item">
+                    Para verificação de contraste Microsoft. Acesse:
                     <a
                       href="https://learn.microsoft.com/pt-br/microsoft-edge/devtools-guide-chromium/accessibility/color-picker"
                       target="_blank"
@@ -322,15 +331,16 @@
                     >
                   </li>
                   <li class="list-group-item">
+                    Para verificação de contraste Linux. Acesse:
                     <a
                       href="https://apps.kde.org/pt-br/kontrast/"
                       target="_blank"
-                      >Verificação de contraste Linux</a
+                      >Contraste Linux</a
                     >
                   </li>
                 </ol>
               </li>
-            </ul>
+            </ol>
           </div>
         </div>
       </section>
@@ -338,42 +348,56 @@
         <header class="row mt-5" id="descricaoDasImagensELegendas">
           <div class="col">
             <div class="jumbotron">
-              <h2 class="h2">Descrição de Imagens e Legendas</h2>
+              <h2 class="h2" tabindex="0">Descrição de Imagens e Legendas</h2>
               <p class="lead">Orientações</p>
               <hr />
             </div>
           </div>
         </header>
-        <div class="row d-flex justify-content-center align-items-end">
-          <div class="col d-flex justify-content-center align-items-end">
+        <div class="row d-flex justify-content-center align-items-start">
+          <div class="col-md-6 d-flex justify-content-center align-items-start">
             <figure
               role="figure"
-              aria-label="Bebê sorridente em um lago rodeado de folhas verdes flutuando na água ao seu redor."
+              aria-label="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."
+              style="width: 60%"
             >
               <img
                 src="./assets/img/image6.jpg"
                 role="img"
-                alt="Bebê sorridente em um lago rodeado de folhas verdes flutuando na água ao seu redor."
-                title="Bebê sorridente em um lago rodeado de folhas verdes flutuando na água ao seu redor."
-                width="300px"
+                alt="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."
+                title="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."
+                width="100%"
               />
+              <figcaption>
+                <p class="lead">
+                  Figura: Bebê sorridente em um lago rodeado de folhas verdes
+                  flutuando ao seu redor.
+                </p>
+              </figcaption>
             </figure>
           </div>
-          <div class="col d-flex justify-content-center align-items-end">
+          <div class="col-md-6 d-flex justify-content-center align-items-start">
             <figure
               role="figure"
-              aria-label="Bebê sorridente em um lago rodeado de folhas flutuando na água ao seu redor em escala de cinzas."
+              aria-label="Bebê sorridente em um lago rodeado de folhas flutuando ao seu redor em escala de cinzas."
+              style="width: 60%"
             >
               <img
                 src="./assets/img/image6-escalacinza.jpg"
-                alt="Bebê sorridente em um lago rodeado de folhas flutuando na água ao seu redor em escala de cinzas."
                 role="img"
-                title="Bebê sorridente em um lago rodeado de folhas flutuando na água ao seu redor em escala de cinzas."
-                width="300px"
+                title="Bebê sorridente em um lago rodeado de folhas flutuando ao seu redor em escala de cinzas."
+                alt="Bebê sorridente em um lago rodeado de folhas flutuando ao seu redor em escala de cinzas."
+                width="100%"
               />
+              <figcaption>
+                <p class="lead">
+                  Figura: Bebê sorridente em um lago rodeado de folhas flutuando
+                  ao seu redor em escala de cinzas.
+                </p>
+              </figcaption>
             </figure>
           </div>
-        </div>        
+        </div>
         <div class="row">
           <div class="col">
             <ol class="list-group list-group-numbered">
@@ -383,9 +407,13 @@
               </li>
               <li class="list-group-item">
                 Legendas em libras são indicadas, sempre que possível, lembrando
-                que não é a única língua de sinais. Se a tradução for inserida em
-                outro idioma nativo por exemplo, o inglês, a língua a ser
+                que não é a única língua de sinais. Se a tradução for inserida
+                em outro idioma nativo por exemplo, o inglês, a língua a ser
                 utilizada é a ASL – American Sign Language.
+              </li>
+              <li class="list-group-item">
+                Todos os menus ou comandos (botões) devem conter o texto
+                alternativo. Exemplo: botão de pesquisa.
               </li>
             </ol>
           </div>
@@ -395,7 +423,7 @@
         <header class="row mt-5" id="instalacaoVLibras">
           <div class="col">
             <div class="jumbotron">
-              <h2 class="h2">Instalação V-Libras</h2>
+              <h2 class="h2" tabindex="0">Instalação V-Libras</h2>
               <p class="lead">Orientações</p>
               <hr />
             </div>
@@ -405,22 +433,132 @@
           <div class="col">
             <ol class="list-group list-group-numbered">
               <li class="list-group-item">
+                Acesse o link para obter as orientações para integrar o VLibras
+                em seus sites. Acesse:
                 <a
                   href="https://vlibras.gov.br/doc/widget/index.html?_ga=2.89578971.1514139829.1663673363-1938240529.1663673363"
+                  target="_blank"
                 >
-                  Link para instalação do V-Libras
+                  VLibras.gov
                 </a>
               </li>
             </ol>
           </div>
         </div>
       </section>
+      <section>
+        <header class="row mt-5" id="normasDeAcessibilidade">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 class="h2" tabindex="0">Normas de Acessibilidade</h2>
+              <hr />
+            </div>
+          </div>
+        </header>
+        <div class="row">
+          <div class="col">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                Quer conhecer todas as normas de acessibilidade?
+                <a href="https://www.w3.org/TR/WCAG21/" target="_blank">
+                  Clique aqui
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header class="row mt-5" id="validarDocumentoHtml">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 class="h2" tabindex="0">
+                Validar práticas de acessibilidade do documento HTML
+              </h2>
+              <hr />
+            </div>
+          </div>
+        </header>
+        <div class="row">
+          <div class="col">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                Para validar práticas de acessibilidade em seu documento HTML,
+                acesse:
+                <a
+                  href="https://accessmonitor.acessibilidade.gov.pt/"
+                  target="_blank"
+                >
+                  Access Monitor
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header class="row mt-5" id="contato">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 class="h2" tabindex="0">Fale conosco</h2>
+              <hr />
+            </div>
+          </div>
+        </header>
+        <form class="d-flex-column gap-5">
+          <div class="form-group">
+            <label for="inputEmail"
+              >Insira seu melhor email para contato</label
+            >
+            <input
+              type="email"
+              class="form-control mt-1"
+              id="inputEmail"
+              aria-describedby="emailHelp"
+              placeholder="Entre com seu email"
+            />
+          </div>
+          <div class="form-group mt-2">
+            <label for="inputMensagem">Insira a Mensagem</label>
+            <textarea
+              class="form-control mt-1"
+              id="inputMensagem"
+              rows="3"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary mt-3"
+            alt="Enviar formulário de contato"
+          >
+            Enviar
+          </button>
+        </form>
+      </section>
     </main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col d-flex justify-content-end fixed-bottom">          
+            <button
+              id="top-button"
+              class="btn btn-primary mt-3 mb-2 hidden-object"
+              tabindex="0"
+              alt="Voltar ao início"
+              onclick="scrollToTop();"
+            >
+              <img
+                src="./assets/icons/arrow_upward_white.svg"
+                alt="Seta apontada para cima. Voltar ao início da página"
+              />
+            </button>        
+        </div>
+      </div>
+    </div>
     <!--FOOTER-->
-    <footer class="bg-light text-center text-lg-start mt-5">      
+    <footer class="bg-light text-center text-lg-start mt-5">
       <div class="text-center p-3">
         Ciclo de palestras - Residência em TIC Software 2022.2
-      </div>      
+      </div>
     </footer>
 
     <!--VLIBRAS-->

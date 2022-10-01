@@ -1,35 +1,109 @@
-
-#decrease img{
-    width: 1.4rem;
+button{
+    font-size: 80px;
 }
 
-.default-icons-width{      
-    width: 2rem;    
+#decrease img {
+  width: 1.4rem;
 }
 
-.invert-colors{
-    filter: invert(100%);
+.default-icons-width {
+  width: 2rem;
 }
 
-.invert-colors-dark{
-    filter: invert(100%);
+.invert-colors {
+  filter: invert(100%);
 }
 
-.invert-colors-dark:focus-visible{
-    filter: invert(0%);
-    background-color: #7395d3;
+button:focus-visible,
+a:focus-visible,
+li:focus-visible,
+h1:focus-visible,
+h2:focus-visible {
+  outline: 4px solid #7395d3 !important;
 }
 
-.dark-mode-style{
-    background-color: #111;
-    color: #fff;
+.invert-colors-dark {
+  filter: invert(100%);
 }
 
-.dark-mode-style:focus-visible, .dropdown-menu li > .dark-mode-style:hover{
-    background-color: #7395d3 !important; 
+.invert-colors-dark:focus-visible {
+  filter: invert(0%);
+  background-color: #7395d3;
 }
 
-button:focus-visible, a:focus-visible, li:focus-visible {
-    outline: 4px solid #7395d3 !important;  
+.dark-mode-style {
+  background-color: #111;
+  color: #fff;
 }
 
+.dark-mode-style:focus-visible,
+.dropdown-menu li > .dark-mode-style:hover {
+  background-color: #7395d3 !important;
+}
+
+.hidden-object{
+    display: none;
+}
+
+/* WEBKITS */
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

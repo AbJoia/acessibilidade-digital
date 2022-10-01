@@ -12,6 +12,8 @@ const logoSerratec = document.getElementById('logo-serratec');
 const botaoAumentarFonte = document.getElementById('increase');
 const botaoDiminuirFonte = document.getElementById('decrease');
 const botaoContraste = document.getElementById('contraste');
+const input = document.getElementsByTagName('input');
+const textarea = document.getElementsByTagName('textarea');
 let darkMode = JSON.parse(localStorage.getItem('darkMode'));
 
 var fontSize = 100
@@ -48,8 +50,30 @@ function aplicarDarkMode(){
         classList.add('dark-mode-style')
     }
 
+    for(var i = 0; i < input.length; i++){
+        var classList = input[i].classList
+        classList.add('text-light')
+        classList.add('bg-dark')
+    }
+
+    for(var i = 0; i < textarea.length; i++){
+        var classList = textarea[i].classList
+        classList.add('text-light')
+        classList.add('bg-dark')
+    }
+
     for(var i = 0; i < ul.length; i++){
         var classList = ul[i].classList
+        classList.add('dark-mode-style')
+    }
+
+    for(var i = 0; i < h1.length; i++){
+        var classList = h1[i].classList
+        classList.add('dark-mode-style')
+    }
+
+    for(var i = 0; i < h2.length; i++){
+        var classList = h2[i].classList
         classList.add('dark-mode-style')
     }
 
@@ -94,6 +118,28 @@ function removerDarkMode(){
         classList.remove('dark-mode-style')
     }
 
+    for(var i = 0; i < input.length; i++){
+        var classList = input[i].classList
+        classList.remove('text-light')
+        classList.remove('bg-dark')
+    }
+
+    for(var i = 0; i < textarea.length; i++){
+        var classList = textarea[i].classList
+        classList.remove('text-light')
+        classList.remove('bg-dark')
+    }
+
+    for(var i = 0; i < h1.length; i++){
+        var classList = h1[i].classList
+        classList.remove('dark-mode-style')
+    }
+
+    for(var i = 0; i < h2.length; i++){
+        var classList = h2[i].classList
+        classList.remove('dark-mode-style')
+    }
+
     for(var i = 0; i < li.length; i++){
         var classList = li[i].classList
         classList.remove('dark-mode-style')
@@ -116,13 +162,13 @@ function aplicarTema(event){
 function aumentarFonte(event){
     if(event instanceof KeyboardEvent && event.key !== 'Enter') return;
     fontSize = fontSize + increaseDecrease
-    body.style.fontSize = fontSize + '%'
-
-    for(var i=0; i<a.length; i++){
-        a[i].style.fontSize = fontSize + '%'
-    } 
+    body.style.fontSize = fontSize + '%'     
 
     if(fontSize > 110){
+        for(var i=0; i<a.length; i++){
+            a[i].style.fontSize = fontSize + '%'
+        }
+
         for(var i=0; i<p.length; i++){
             p[i].style.fontSize = fontSize + '%'
         }
@@ -143,7 +189,8 @@ function aumentarFonte(event){
 
 function diminuirFonte(event){
     if(event instanceof KeyboardEvent && event.key !== 'Enter') return;
-    fontSize = fontSize - increaseDecrease    
+    fontSize = fontSize - increaseDecrease  
+    console.log(fontSize)  
     body.style.fontSize = fontSize + '%'
 
     for(var i=0; i<a.length; i++){        
@@ -162,3 +209,24 @@ function diminuirFonte(event){
         p[i].style.fontSize = fontSize + '%'
     }
 }
+
+window.addEventListener("scroll", function(){
+    if(window.scrollY > 800){
+        var button = document.getElementById("top-button").classList  
+        button.remove("hidden-object")
+        button.add("slideInRight")
+    } 
+    
+    if(window.scrollY < 200){
+        var button = document.getElementById("top-button").classList  
+        button.add("hidden-object")
+        button.remove("slideInLeft")
+    }
+})
+
+function scrollToTop(){
+    window.scrollTo({
+        top: 0
+    })
+}
+
