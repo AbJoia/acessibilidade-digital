@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acessibilidade</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    >
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
     <!--HEADER-->
@@ -95,58 +95,52 @@
             <li class="nav-item">
               <button
                 class="btn btn-danger border border-secondary p-1"
-                id="decrease"
-                role="button"
+                id="decrease"                
                 aria-pressed="false"
-                onclick="diminuirFonte(event)"
-                keyup="diminuirFonte(event)"
+                onclick="diminuirFonte(event);"
+                onkeyup="() => diminuirFonte(event);"
               >
                 <img
                   class="default-icons-width invert-colors"
                   src="./assets/icons/text_decrease.svg"
-                  aria-label="Letra A com sinal de subtração representando diminuição de fonte."
-                  role="img"
+                  aria-label="Letra A com sinal de subtração representando diminuição de fonte."                  
                   alt="Diminuir o tamanho da fonte."
                   title="Diminuir o tamanho da fonte."
-                />
+                >
               </button>
             </li>
             <li class="nav-item">
               <button
                 class="btn btn-danger border border-secondary p-1"
-                id="increase"
-                role="button"
+                id="increase"                
                 aria-pressed="false"
-                onclick="aumentarFonte(event)"
-                keyup="aumentarFonte(event)"
+                onclick="aumentarFonte(event);"
+                onkeyup="() => aumentarFonte(event);"
               >
                 <img
                   class="default-icons-width invert-colors"
-                  src="./assets/icons/text_increase.svg"
-                  role="img"
+                  src="./assets/icons/text_increase.svg"                  
                   aria-label="Letra A com o sinal de soma representando aumento de fonte."
                   alt="Aumentar o tamanho da fonte."
                   title="Aumentar o tamanho da fonte."
-                />
+                >
               </button>
             </li>
             <li class="nav-item">
               <button
                 class="btn border border-secondary p-1"
-                id="contraste"
-                role="button"
+                id="contraste"                
                 aria-pressed="false"
-                onclick="aplicarTema(event)"
-                keyup="aplicarTema(event)"
+                onclick="aplicarTema(event);"
+                onkeyup="() => aplicarTema(event);"
               >
                 <img
                   class="default-icons-width"
-                  src="./assets/icons/contrast.svg"
-                  role="img"
+                  src="./assets/icons/contrast.svg"                  
                   aria-label="Circulo com a metade preto e a outra metade branco representando ajuste de contraste de cores do site"
                   alt="Mudar contraste"
                   title="Mudar contraste"
-                />
+                >
               </button>
             </li>
           </ul>
@@ -173,23 +167,21 @@
             <img
               id="logo-serratec"
               src="./assets/img/serratecLogo.png"
-              alt="Logotipo do parque tecnológico da região serrana - SerraTec"
-              role="img"
+              alt="Logotipo do parque tecnológico da região serrana - SerraTec"              
               title="Logotipo do parque tecnológico da região serrana - SerraTec"
               width="300px"
-            />
+            >
           </figure>
         </div>
         <div class="col">
-          <figure role="figure" aria-label="Representação dos tipos de PCDs">
+          <figure aria-label="Representação dos tipos de PCDs">
             <img
               id="home-image"
               src="./assets/img/image1.png"
-              alt="Representação dos tipos de PCDs"
-              role="img"
+              alt="Representação dos tipos de PCDs"             
               title="Representação dos tipos de PCDs"
-              width="300px"
-            />
+              style="width:300px"
+            >
           </figure>
         </div>
       </div>
@@ -202,7 +194,7 @@
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Navegação via TAB</h2>
               <p class="lead">Orientações</p>
-              <hr />
+              <hr>
             </div>
           </div>
         </header>
@@ -223,28 +215,25 @@
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Ampliação e redução de fontes</h2>
               <p class="lead">Orientações</p>
-              <hr />
+              <hr>
             </div>
           </div>
         </header>
         <div class="row d-flex justify-content-center align-items-end">
           <div class="col d-flex justify-content-center align-items-end">
-            <figure
-              role="figure"
+            <figure              
               aria-label="Demonstração do modelo de layout para alterar tamanho do texto."
             >
               <img
                 src="./assets/img/image4.png"
-                alt="Modelo de layout para alterar tamanho do texto."
-                role="img"
+                alt="Modelo de layout para alterar tamanho do texto."                
                 title="Modelo de layout para alterar tamanho do texto."
-                width="300px"
-              />
+                style="width:300px"
+              >
             </figure>
           </div>
           <div class="col d-flex justify-content-center align-items-end">
-            <figure
-              role="figure"
+            <figure              
               aria-label="Demonstração do modelo de layout para alterar tamanho do texto modo dark."
             >
               <img
@@ -252,8 +241,8 @@
                 alt="Modelo de layout para alterar tamanho do texto modo dark."
                 title="Modelo de layout para alterar tamanho do texto modo dark."
                 role="img"
-                width="300px"
-              />
+                style="width:300px"
+              >
             </figure>
           </div>
         </div>
@@ -285,24 +274,22 @@
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Contraste</h2>
               <p class="lead">Orientações</p>
-              <hr />
+              <hr>
             </div>
           </div>
         </header>
         <div class="row d-flex justify-content-center align-items-end">
           <div class="col d-flex justify-content-center align-items-end">
-            <figure
-              role="figure"
+            <figure              
               aria-label="Imagem em preto e branco demonstrando efeitos de contraste."
               style="width: 60%"
             >
               <img
-                src="./assets/img/image5.jpeg"
-                role="img"
+                src="./assets/img/image5.jpeg"                
                 alt="Imagem em preto e branco demonstrando efeitos de contraste."
                 title="Imagem em preto e branco demonstrando efeitos de contraste."
-                width="100%"
-              />
+                style="width:100%"
+              >
               <figcaption>
                 <p class="lead">
                   Figura: Imagem em preto e branco demonstrando efeitos de
@@ -350,24 +337,22 @@
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Descrição de Imagens e Legendas</h2>
               <p class="lead">Orientações</p>
-              <hr />
+              <hr>
             </div>
           </div>
         </header>
         <div class="row d-flex justify-content-center align-items-start">
           <div class="col-md-6 d-flex justify-content-center align-items-start">
-            <figure
-              role="figure"
+            <figure              
               aria-label="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."
               style="width: 60%"
             >
               <img
-                src="./assets/img/image6.jpg"
-                role="img"
+                src="./assets/img/image6.jpg"                
                 alt="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."
                 title="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."
-                width="100%"
-              />
+                style="width:100%"
+              >
               <figcaption>
                 <p class="lead">
                   Figura: Bebê sorridente em um lago rodeado de folhas verdes
@@ -377,18 +362,16 @@
             </figure>
           </div>
           <div class="col-md-6 d-flex justify-content-center align-items-start">
-            <figure
-              role="figure"
+            <figure             
               aria-label="Bebê sorridente em um lago rodeado de folhas flutuando ao seu redor em escala de cinzas."
               style="width: 60%"
             >
               <img
-                src="./assets/img/image6-escalacinza.jpg"
-                role="img"
+                src="./assets/img/image6-escalacinza.jpg"                
                 title="Bebê sorridente em um lago rodeado de folhas flutuando ao seu redor em escala de cinzas."
                 alt="Bebê sorridente em um lago rodeado de folhas flutuando ao seu redor em escala de cinzas."
-                width="100%"
-              />
+                style="width:100%"
+              >
               <figcaption>
                 <p class="lead">
                   Figura: Bebê sorridente em um lago rodeado de folhas flutuando
@@ -425,7 +408,7 @@
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Instalação V-Libras</h2>
               <p class="lead">Orientações</p>
-              <hr />
+              <hr>
             </div>
           </div>
         </header>
@@ -451,7 +434,7 @@
           <div class="col">
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Normas de Acessibilidade</h2>
-              <hr />
+              <hr>
             </div>
           </div>
         </header>
@@ -475,7 +458,7 @@
               <h2 class="h2" tabindex="0">
                 Validar práticas de acessibilidade do documento HTML
               </h2>
-              <hr />
+              <hr>
             </div>
           </div>
         </header>
@@ -501,22 +484,19 @@
           <div class="col">
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Fale conosco</h2>
-              <hr />
+              <hr>
             </div>
           </div>
         </header>
         <form class="d-flex-column gap-5">
           <div class="form-group">
-            <label for="inputEmail"
-              >Insira seu melhor email para contato</label
-            >
+            <label for="inputEmail">Insira seu melhor email para contato</label>
             <input
               type="email"
               class="form-control mt-1"
-              id="inputEmail"
-              aria-describedby="emailHelp"
+              id="inputEmail"              
               placeholder="Entre com seu email"
-            />
+            >
           </div>
           <div class="form-group mt-2">
             <label for="inputMensagem">Insira a Mensagem</label>
@@ -528,8 +508,7 @@
           </div>
           <button
             type="submit"
-            class="btn btn-primary mt-3"
-            alt="Enviar formulário de contato"
+            class="btn btn-primary mt-3"           
           >
             <span>Enviar</span>
           </button>
@@ -538,19 +517,18 @@
     </main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col d-flex justify-content-end fixed-bottom">          
-            <button
-              id="top-button"
-              class="btn btn-primary mt-3 mb-2 hidden-object"
-              tabindex="0"
-              alt="Voltar ao início"
-              onclick="scrollToTop();"
+        <div class="col d-flex justify-content-end fixed-bottom">
+          <button
+            id="top-button"
+            class="btn btn-primary mt-3 mb-2 hidden-object"
+            tabindex="0"            
+            onclick="scrollToTop();"
+          >
+            <img
+              src="./assets/icons/arrow_upward_white.svg"
+              alt="Seta apontada para cima. Voltar ao início da página"
             >
-              <img
-                src="./assets/icons/arrow_upward_white.svg"
-                alt="Seta apontada para cima. Voltar ao início da página"
-              />
-            </button>        
+          </button>
         </div>
       </div>
     </div>
