@@ -14,7 +14,8 @@ button:focus-visible,
 a:focus-visible,
 li:focus-visible,
 h1:focus-visible,
-h2:focus-visible {
+h2:focus-visible,
+section:focus-visible {
   outline: 4px solid #7395d3 !important;
 }
 
