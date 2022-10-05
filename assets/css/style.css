@@ -18,6 +18,14 @@ h2:focus-visible {
   outline: 4px solid #7395d3 !important;
 }
 
+button:hover,
+a:hover,
+li:hover,
+h1:hover,
+h2:hover {
+  outline: 4px solid #7395d3 !important;
+}
+
 .invert-colors-dark {
   filter: invert(100%);
 }

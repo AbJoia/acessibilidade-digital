@@ -276,3 +276,12 @@ function scrollToTop(){
     })
 }
 
+botaoDiminuirFonte.onclick = diminuirFonte;
+botaoDiminuirFonte.onkeyup = () => diminuirFonte;
+botaoAumentarFonte.onclick = aumentarFonte;
+botaoAumentarFonte.onkeyup = () => aumentarFonte;
+botaoContraste.onclick = aplicarTema;
+botaoContraste.onkeyup = () => aplicarTema;
+
+
+
