@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acessibilidade</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
-    >
-    <link rel="stylesheet" href="./assets/css/style.css">    
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!--HEADER-->
     <header class="container-fluid text-center mt-1 bg-light">
-      <menu class="row">
-        <div class="col">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <div class="navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav navbar-brand">
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#content"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"                      
-                    >
-                      MENU
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#navegacaoViaTab"
-                          >Navegação via TAB</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#ampliacaoReducaoFonte"
-                          >Ampliação e redução de fontes</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#contraste-content"
-                          >Contraste</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="#descricaoDasImagensELegendas"
-                          >Descrição das Imagens e Legendas</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#instalacaoVLibras"
-                          >Instalação VLibras</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#normasDeAcessibilidade"
-                          >Normas de Acessibilidade</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#validarDocumentoHtml"
-                          >Validação de documento HTML</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#contato"
-                          >Fale conosco</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+      <section>
+        <menu class="row">
+          <div class="col">
+            <div class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <nav class="navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav navbar-brand">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#content"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        MENU
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#navegacaoViaTab"
+                            >Navegação via TAB</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#ampliacaoReducaoFonte"
+                            >Ampliação e redução de fontes</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#contraste-content"
+                            >Contraste</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="#descricaoDasImagensELegendas"
+                            >Descrição das Imagens e Legendas</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#instalacaoVLibras"
+                            >Instalação VLibras</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="#normasDeAcessibilidade"
+                            >Normas de Acessibilidade</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#validarDocumentoHtml"
+                            >Validação de documento HTML</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#contato"
+                            >Fale conosco</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
-          </nav>
-        </div>
-      </menu>
+          </div>
+        </menu>
+      </section>
     </header>
     <!--ACCESSIBILITY-SETTINGS-->
     <div class="container mt-1">
-      <div class="row"> 
-        <div class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center gap-3 mb-2">
+      <div class="row">
+        <div
+          class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center gap-3 mb-2"
+        >
           <a href="#conteudo-principal" accesskey="1">Ir para o conteúdo [1]</a>
-          <a href="#formulario-faleconosco" accesskey="2">Ir para o formulário [2]</a>
+          <a href="#formulario-faleconosco" accesskey="2"
+            >Ir para o formulário [2]</a
+          >
           <a href="#rodape" accesskey="3">Ir para o rodapé [3]</a>
         </div>
         <div class="col-md-6">
@@ -99,47 +107,47 @@
             <li class="nav-item">
               <button
                 class="btn btn-danger border border-secondary p-1"
-                id="decrease"                
+                id="decrease"
                 aria-pressed="false"
               >
                 <img
                   class="default-icons-width invert-colors"
                   src="./assets/icons/text_decrease.svg"
-                  aria-label="Letra A com sinal de subtração representando diminuição de fonte."                  
-                  alt="Diminuir o tamanho da fonte."                  
-                >
+                  aria-label="Letra A com sinal de subtração representando diminuição de fonte."
+                  alt="Diminuir o tamanho da fonte."
+                />
               </button>
             </li>
             <li class="nav-item">
               <button
                 class="btn btn-danger border border-secondary p-1"
-                id="increase"                
-                aria-pressed="false"               
+                id="increase"
+                aria-pressed="false"
               >
                 <img
                   class="default-icons-width invert-colors"
-                  src="./assets/icons/text_increase.svg"                  
+                  src="./assets/icons/text_increase.svg"
                   aria-label="Letra A com o sinal de soma representando aumento de fonte."
-                  alt="Aumentar o tamanho da fonte."                  
-                >
+                  alt="Aumentar o tamanho da fonte."
+                />
               </button>
             </li>
             <li class="nav-item">
               <button
                 class="btn border border-secondary p-1"
-                id="contraste"                
-                aria-pressed="false"                
+                id="contraste"
+                aria-pressed="false"
               >
                 <img
                   class="default-icons-width"
-                  src="./assets/icons/contrast.svg"                  
+                  src="./assets/icons/contrast.svg"
                   aria-label="Circulo com a metade preto e a outra metade branco representando ajuste de contraste de cores do site"
-                  alt="Alterar contraste"                  
-                >
+                  alt="Alterar contraste"
+                />
               </button>
             </li>
           </ul>
-        </div>        
+        </div>
       </div>
     </div>
     <div class="container mt-4">
@@ -147,9 +155,13 @@
         <div class="col text-center">
           <noscript>
             <p class="bg-danger p-2">
-              Identificamos que seu navegador não está com o Javascript ativado. Esta tecnologia é necessária para se poder usufruir de todos os recursos desta página.
+              Identificamos que seu navegador não está com o Javascript ativado.
+              Esta tecnologia é necessária para se poder usufruir de todos os
+              recursos desta página.
             </p>
-            <a href="https://support.google.com/adsense/answer/12654?hl=pt-BR">Guia para ativação do Javascript</a>
+            <a href="https://support.google.com/adsense/answer/12654?hl=pt-BR"
+              >Guia para ativação do Javascript</a
+            >
           </noscript>
         </div>
       </div>
@@ -167,15 +179,15 @@
             </p>
           </div>
           <figure
-            class="slideInLeft"           
+            class="slideInLeft"
             aria-label="Logotipo do parque tecnológico da região serrana - SerraTec"
           >
             <img
               id="logo-serratec"
               src="./assets/img/serratecLogo.png"
               alt="Logotipo do parque tecnológico da região serrana - SerraTec"
-              style="width:300px"
-            >
+              style="width: 300px"
+            />
           </figure>
         </div>
         <div class="col">
@@ -184,8 +196,8 @@
               id="home-image"
               src="./assets/img/image1.png"
               alt="Representação dos tipos de PCDs"
-              style="width:300px"
-            >
+              style="width: 300px"
+            />
           </figure>
         </div>
       </div>
@@ -198,7 +210,7 @@
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Navegação via TAB</h2>
               <p class="lead">Orientações</p>
-              <hr>
+              <hr />
             </div>
           </div>
         </header>
@@ -219,31 +231,31 @@
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Ampliação e redução de fontes</h2>
               <p class="lead">Orientações</p>
-              <hr>
+              <hr />
             </div>
           </div>
         </header>
         <div class="row d-flex justify-content-center align-items-end">
           <div class="col d-flex justify-content-center align-items-end">
-            <figure              
+            <figure
               aria-label="Demonstração do modelo de layout para alterar tamanho do texto."
             >
               <img
                 src="./assets/img/image4.png"
                 alt="Modelo de layout para alterar tamanho do texto."
-                style="width:300px"
-              >
+                style="width: 300px"
+              />
             </figure>
           </div>
           <div class="col d-flex justify-content-center align-items-end">
-            <figure              
+            <figure
               aria-label="Demonstração do modelo de layout para alterar tamanho do texto modo dark."
             >
               <img
                 src="./assets/img/image4Dark.png"
-                alt="Modelo de layout para alterar tamanho do texto modo dark."                
-                style="width:300px"
-              >
+                alt="Modelo de layout para alterar tamanho do texto modo dark."
+                style="width: 300px"
+              />
             </figure>
           </div>
         </div>
@@ -275,21 +287,21 @@
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Contraste</h2>
               <p class="lead">Orientações</p>
-              <hr>
+              <hr />
             </div>
           </div>
         </header>
         <div class="row d-flex justify-content-center align-items-end">
           <div class="col d-flex justify-content-center align-items-end">
-            <figure              
+            <figure
               aria-label="Imagem em preto e branco demonstrando efeitos de contraste."
               style="width: 60%"
             >
               <img
-                src="./assets/img/image5.jpeg"                
+                src="./assets/img/image5.jpeg"
                 alt="Imagem em preto e branco demonstrando efeitos de contraste."
-                style="width:100%"
-              >
+                style="width: 100%"
+              />
               <figcaption>
                 <p class="lead">
                   Figura: Imagem em preto e branco demonstrando efeitos de
@@ -337,21 +349,21 @@
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Descrição de Imagens e Legendas</h2>
               <p class="lead">Orientações</p>
-              <hr>
+              <hr />
             </div>
           </div>
         </header>
         <div class="row d-flex justify-content-center align-items-start">
           <div class="col-md-6 d-flex justify-content-center align-items-start">
-            <figure              
+            <figure
               aria-label="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."
               style="width: 60%"
             >
               <img
-                src="./assets/img/image6.jpg"                
+                src="./assets/img/image6.jpg"
                 alt="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."
-                style="width:100%"
-              >
+                style="width: 100%"
+              />
               <figcaption>
                 <p class="lead">
                   Figura: Bebê sorridente em um lago rodeado de folhas verdes
@@ -361,15 +373,15 @@
             </figure>
           </div>
           <div class="col-md-6 d-flex justify-content-center align-items-start">
-            <figure             
+            <figure
               aria-label="Bebê sorridente em um lago rodeado de folhas flutuando ao seu redor em escala de cinzas."
               style="width: 60%"
             >
               <img
                 src="./assets/img/image6-escalacinza.jpg"
                 alt="Bebê sorridente em um lago rodeado de folhas flutuando ao seu redor em escala de cinzas."
-                style="width:100%"
-              >
+                style="width: 100%"
+              />
               <figcaption>
                 <p class="lead">
                   Figura: Bebê sorridente em um lago rodeado de folhas flutuando
@@ -406,7 +418,7 @@
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Instalação V-Libras</h2>
               <p class="lead">Orientações</p>
-              <hr>
+              <hr />
             </div>
           </div>
         </header>
@@ -432,7 +444,7 @@
           <div class="col">
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Normas de Acessibilidade</h2>
-              <hr>
+              <hr />
             </div>
           </div>
         </header>
@@ -456,7 +468,7 @@
               <h2 class="h2" tabindex="0">
                 Validar práticas de acessibilidade do documento HTML
               </h2>
-              <hr>
+              <hr />
             </div>
           </div>
         </header>
@@ -482,7 +494,7 @@
           <div class="col">
             <div class="jumbotron">
               <h2 class="h2" tabindex="0">Fale conosco</h2>
-              <hr>
+              <hr />
             </div>
           </div>
         </header>
@@ -492,9 +504,9 @@
             <input
               type="email"
               class="form-control mt-1"
-              id="inputEmail"              
+              id="inputEmail"
               placeholder="Entre com seu email"
-            >
+            />
           </div>
           <div class="form-group mt-2">
             <label for="inputMensagem">Insira a Mensagem</label>
@@ -505,10 +517,7 @@
               placeholder="Insira sua mensagem..."
             ></textarea>
           </div>
-          <button
-            type="submit"
-            class="btn btn-primary mt-3"           
-          >
+          <button type="submit" class="btn btn-primary mt-3">
             <span>Enviar</span>
           </button>
         </form>
@@ -525,7 +534,7 @@
             <img
               src="./assets/icons/arrow_upward_white.svg"
               alt="Seta apontada para cima. Voltar ao início da página"
-            >
+            />
           </button>
         </div>
       </div>
@@ -535,7 +544,7 @@
       <div class="text-center p-3">
         Ciclo de palestras - Residência em TIC Software 2022.2
       </div>
-    </footer>   
+    </footer>
 
     <!--VLIBRAS-->
     <div vw class="enabled">
@@ -562,6 +571,6 @@
     ></script>
 
     <!--SCRIPT-->
-    <script src="./assets/js/script.js"></script>    
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
