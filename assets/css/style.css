@@ -22,7 +22,8 @@ button:hover,
 a:hover,
 li:hover,
 h1:hover,
-h2:hover {
+h2:hover,
+h3:hover {
   outline: 4px solid #7395d3 !important;
 }
 
