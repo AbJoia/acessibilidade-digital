@@ -16,6 +16,7 @@ const span = document.getElementsByTagName('span');
 const label = document.getElementsByTagName('label');
 const input = document.getElementsByTagName('input');
 const textarea = document.getElementsByTagName('textarea');
+const topButton = document.getElementById('top-button');
 let darkMode = JSON.parse(localStorage.getItem('darkMode'));
 
 if(darkMode){
@@ -258,19 +259,20 @@ function diminuirFonte(event){
 
 window.addEventListener("scroll", function(){
     if(window.scrollY > 800){
-        var button = document.getElementById("top-button").classList  
+        var button = topButton.classList  
         button.remove("hidden-object")
         button.add("slideInRight")
     } 
     
     if(window.scrollY < 200){
-        var button = document.getElementById("top-button").classList  
+        var button = topButton.classList  
         button.add("hidden-object")
         button.remove("slideInLeft")
     }
 })
 
-function scrollToTop(){
+function scrollToTop(event){
+    if(event instanceof KeyboardEvent && event.key !== 'Enter') return;
     window.scrollTo({
         top: 0
     })
@@ -282,6 +284,8 @@ botaoAumentarFonte.onclick = aumentarFonte;
 botaoAumentarFonte.onkeyup = () => aumentarFonte;
 botaoContraste.onclick = aplicarTema;
 botaoContraste.onkeyup = () => aplicarTema;
+topButton.onclick = scrollToTop;
+topButton.onkeyup = () => scrollToTop;
 
 
 
