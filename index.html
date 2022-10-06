@@ -87,28 +87,20 @@
     <!--ACCESSIBILITY-SETTINGS-->
     <div class="container mt-1">
       <div class="row">
-        <div
-          class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center gap-3 mb-2"
-        >
-          <a href="#conteudo-principal" accesskey="1">Ir para o conteúdo [1]</a>
-          <a href="#formulario-faleconosco" accesskey="2"
-            >Ir para o formulário [2]</a
-          >
-          <a href="#rodape" accesskey="3">Ir para o rodapé [3]</a>
-        </div>
         <div class="col-md-6">
           <ul
-            class="nav justify-content-md-end justify-content-center align-items-end gap-2"
+            class="nav justify-content-md-start justify-content-center align-items-end gap-2"
           >
             <li class="nav-item">
               <button
                 class="btn btn-danger border border-secondary p-1"
                 id="decrease"
                 aria-pressed="false"
+                title="Botão para diminuir o tamanho do texto"
               >
                 <img
-                  class="default-icons-width invert-colors"
-                  src="./assets/icons/text_decrease.svg"
+                  class="default-icons-width"
+                  src="./assets/icons/text_decrease_white.svg"
                   aria-label="Letra A com sinal de subtração representando diminuição de fonte."
                   alt="Diminuir o tamanho da fonte."
                 />
@@ -119,10 +111,11 @@
                 class="btn btn-danger border border-secondary p-1"
                 id="increase"
                 aria-pressed="false"
+                title="Botão para aumentar o tamanho do texto."
               >
                 <img
-                  class="default-icons-width invert-colors"
-                  src="./assets/icons/text_increase.svg"
+                  class="default-icons-width"
+                  src="./assets/icons/text_increase_white.svg"
                   aria-label="Letra A com o sinal de soma representando aumento de fonte."
                   alt="Aumentar o tamanho da fonte."
                 />
@@ -133,10 +126,12 @@
                 class="btn border border-secondary p-1"
                 id="contraste"
                 aria-pressed="false"
+                title="Botão para aplicar contraste"
               >
                 <img
                   class="default-icons-width"
-                  src="./assets/icons/contrast.svg"
+                  id="icone-contraste"
+                  src="./assets/icons/contrast_black.svg"
                   aria-label="Circulo com a metade preto e a outra metade branco representando ajuste de contraste de cores do site"
                   alt="Alterar contraste"
                 />
@@ -144,6 +139,15 @@
             </li>
           </ul>
         </div>
+        <div
+          class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center gap-3 mt-2"
+        >
+          <a href="#conteudo-principal" accesskey="1">Ir para o conteúdo [1]</a>
+          <a href="#formulario-faleconosco" accesskey="2"
+            >Ir para o formulário [2]</a
+          >
+          <a href="#rodape" accesskey="3">Ir para o rodapé [3]</a>
+        </div>        
       </div>
     </div>
     <div class="container mt-4">
@@ -497,7 +501,7 @@
               type="email"
               class="form-control mt-1"
               id="inputEmail"
-              placeholder="Entre com seu email"
+              placeholder="Insira seu email..."
             />
           </div>
           <div class="form-group mt-2">

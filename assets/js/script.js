@@ -16,6 +16,7 @@ const span = document.getElementsByTagName('span');
 const label = document.getElementsByTagName('label');
 const input = document.getElementsByTagName('input');
 const textarea = document.getElementsByTagName('textarea');
+const iconeContraste = document.getElementById('icone-contraste');
 const topButton = document.getElementById('top-button');
 let darkMode = JSON.parse(localStorage.getItem('darkMode'));
 
@@ -26,23 +27,23 @@ if(darkMode){
 function aplicarDarkMode(){    
     imagemPcds.src = './assets/img/image3.png';    
     logoSerratec.src = './assets/img/serratecLogoBranco.png';
+    iconeContraste.src = './assets/icons/contrast_white.svg';
+       
     botaoAumentarFonte.classList.remove('btn-danger')    
-    botaoDiminuirFonte.classList.remove('btn-danger')  
+    botaoDiminuirFonte.classList.remove('btn-danger')
 
+    botaoContraste.classList.add('dark-mode-style')
     botaoAumentarFonte.classList.add('dark-mode-style')    
     botaoDiminuirFonte.classList.add('dark-mode-style')    
-    botaoContraste.classList.add('invert-colors-dark')        
     
     body.style.backgroundColor = '#111';
-    body.style.color = '#FFF';
+    body.style.color = '#FFF';    
     
-    var headerClassList = header.classList
-    headerClassList.remove('bg-light')
-    headerClassList.add('dark-mode-style')   
+    header.classList.remove('bg-light')
+    header.classList.add('dark-mode-style')
 
-    var footerClassList = footer.classList    
-    footerClassList.remove('bg-light')
-    footerClassList.add('bg-dark')
+    footer.classList.remove('bg-light')
+    footer.classList.add('bg-dark')
 
     for(var i = 0; i < a.length; i++){
         var classList = a[i].classList
@@ -79,7 +80,7 @@ function aplicarDarkMode(){
 
     for(var i = 0; i < li.length; i++){
         var classList = li[i].classList
-        classList.add('dark-mode-style')
+        classList.add('dark-mode-style')       
     }
 
     localStorage.setItem('darkMode', JSON.stringify(true))
@@ -88,24 +89,23 @@ function aplicarDarkMode(){
 function removerDarkMode(){    
     imagemPcds.src = './assets/img/image1.png';    
     logoSerratec.src = './assets/img/serratecLogo.png';
+    iconeContraste.src = './assets/icons/contrast_black.svg';
+
     botaoAumentarFonte.classList.add('btn-danger')    
-    botaoDiminuirFonte.classList.add('btn-danger')    
-    botaoContraste.classList.remove('invert-colors')
+    botaoDiminuirFonte.classList.add('btn-danger')  
     
     botaoAumentarFonte.classList.remove('dark-mode-style')    
-    botaoDiminuirFonte.classList.remove('dark-mode-style')    
-    botaoContraste.classList.remove('invert-colors-dark')   
+    botaoDiminuirFonte.classList.remove('dark-mode-style')
+    botaoContraste.classList.remove('dark-mode-style')   
     
     body.style.backgroundColor = '#FFF';
-    body.style.color = '#000';
-    
-    var headerClassList = header.classList
-    headerClassList.add('bg-light')
-    headerClassList.remove('dark-mode-style')   
+    body.style.color = '#000';    
+   
+    header.classList.add('bg-light')
+    header.classList.remove('dark-mode-style')
 
-    var footerClassList = footer.classList    
-    footerClassList.add('bg-light')
-    footerClassList.remove('bg-dark')
+    footer.classList .add('bg-light')
+    footer.classList .remove('bg-dark')
 
     for(var i = 0; i < a.length; i++){
         var classList = a[i].classList
@@ -142,7 +142,7 @@ function removerDarkMode(){
 
     for(var i = 0; i < li.length; i++){
         var classList = li[i].classList
-        classList.remove('dark-mode-style')
+        classList.remove('dark-mode-style')        
     } 
 
     localStorage.setItem('darkMode', JSON.stringify(false))           
