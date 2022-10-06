@@ -2,9 +2,23 @@ body{
   font-family: 'Arial', 'Calibri', 'Tahoma', sans-serif;  
 }
 
+.figure-home,
+.figure-content img{  
+  width: 100%;
+}
+
+.figure-home img,
+.figure-content{
+  width: 60%;
+}
+
 a{
   color: #000acd;
   text-decoration: none;
+}
+
+#content{
+  min-height: 75vh;
 }
 
 #decrease img {

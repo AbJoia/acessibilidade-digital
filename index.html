@@ -87,7 +87,7 @@
     <!--ACCESSIBILITY-SETTINGS-->
     <div class="container mt-1">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6 d-flex justify-content-center">
           <ul
             class="nav justify-content-md-start justify-content-center align-items-end gap-2"
           >
@@ -140,14 +140,14 @@
           </ul>
         </div>
         <div
-          class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center gap-3 mt-2"
+          class="col-lg-6 d-flex justify-content-center gap-3 mt-3"
         >
           <a href="#conteudo-principal" accesskey="1">Ir para o conteúdo [1]</a>
           <a href="#formulario-faleconosco" accesskey="2"
             >Ir para o formulário [2]</a
           >
           <a href="#rodape" accesskey="3">Ir para o rodapé [3]</a>
-        </div>        
+        </div>
       </div>
     </div>
     <div class="container mt-4">
@@ -168,8 +168,8 @@
     </div>
     <!--HOME-->
     <div class="container mt-1 text-center" id="content">
-      <div class="row mt-5 d-flex" style="min-height: 75vh">
-        <div class="col">
+      <div class="row mt-5">
+        <div class="col-lg-6">
           <div class="jumbotron">
             <h1 tabindex="0">Acessibilidade Digital</h1>
             <p class="lead">
@@ -179,24 +179,24 @@
             </p>
           </div>
           <figure
-            class="slideInLeft"
+            class="slideInLeft figure-home"
             aria-label="Logotipo do parque tecnológico da região serrana - SerraTec"
           >
             <img
               id="logo-serratec"
               src="./assets/img/serratecLogo.png"
-              alt="Logotipo do parque tecnológico da região serrana - SerraTec"
-              style="width: 300px"
+              alt="Logotipo do parque tecnológico da região serrana - SerraTec"              
             />
           </figure>
         </div>
-        <div class="col">
-          <figure aria-label="Representação dos tipos de PCDs">
+        <div class="col-lg-6">
+          <figure
+            class="figure-home"
+            aria-label="Representação dos tipos de PCDs">
             <img
               id="home-image"
               src="./assets/img/image1.png"
-              alt="Representação dos tipos de PCDs"
-              style="width: 300px"
+              alt="Representação dos tipos de PCDs"              
             />
           </figure>
         </div>
@@ -204,7 +204,7 @@
     </div>
     <!--CONTENT-->
     <main class="container mt-1" id="conteudo-principal">
-      <section  id="navegacaoViaTab">
+      <section id="navegacaoViaTab">
         <header class="row">
           <div class="col">
             <div class="jumbotron">
@@ -235,27 +235,37 @@
             </div>
           </div>
         </header>
-        <div class="row d-flex justify-content-center align-items-end">
-          <div class="col d-flex justify-content-center align-items-end">
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-center">
             <figure
+              class="figure-content"
               aria-label="Demonstração do modelo de layout para alterar tamanho do texto."
             >
               <img
                 src="./assets/img/image4.png"
-                alt="Modelo de layout para alterar tamanho do texto."
-                style="width: 300px"
+                alt="Modelo de layout para alterar tamanho do texto."                
               />
+              <figcaption>
+                <p class="lead">
+                  Figura: Demonstração de design para exibir funcionalidade de aumento de fonte.
+                </p>
+              </figcaption>
             </figure>
           </div>
-          <div class="col d-flex justify-content-center align-items-end">
+          <div class="col-lg-6 d-flex justify-content-center">
             <figure
+              class="figure-content"
               aria-label="Demonstração do modelo de layout para alterar tamanho do texto modo dark."
             >
               <img
                 src="./assets/img/image4Dark.png"
-                alt="Modelo de layout para alterar tamanho do texto modo dark."
-                style="width: 300px"
+                alt="Modelo de layout para alterar tamanho do texto modo dark."                
               />
+              <figcaption>
+                <p class="lead">
+                  Figura: Demonstração de design para exibir funcionalidade de aumento de fonte em modo de alto contraste.
+                </p>
+              </figcaption>
             </figure>
           </div>
         </div>
@@ -272,7 +282,7 @@
               </li>
               <li class="list-group-item">
                 Utilizar nos menus, fonte de fácil leitura. Por exemplo:
-                Calibri, Arial, Tahoma, etc...
+                <strong>Calibri</strong>,<strong>Arial</strong>, <strong>Tahoma</strong>, etc...
               </li>
               <li class="list-group-item">
                 Evitar fontes manuscritas ou serifadas.
@@ -291,16 +301,15 @@
             </div>
           </div>
         </header>
-        <div class="row d-flex justify-content-center align-items-end">
+        <div class="row">
           <div class="col d-flex justify-content-center align-items-end">
             <figure
-              aria-label="Imagem em preto e branco demonstrando efeitos de contraste."
-              style="width: 60%"
+              class="figure-content"
+              aria-label="Imagem em preto e branco demonstrando efeitos de contraste."              
             >
               <img
                 src="./assets/img/image5.jpeg"
-                alt="Imagem em preto e branco demonstrando efeitos de contraste."
-                style="width: 100%"
+                alt="Imagem em preto e branco demonstrando efeitos de contraste."               
               />
               <figcaption>
                 <p class="lead">
@@ -316,7 +325,7 @@
             <ol class="list-group list-group-numbered">
               <li class="list-group-item">
                 Destacar cada menu ou botão com moldura ou invertendo a cor.
-                (sempre aumentando o contraste).
+                <strong>(sempre aumentando o contraste)</strong>.
               </li>
               <li class="list-group-item">
                 Testar contraste nos links abaixo.
@@ -324,14 +333,13 @@
                   <li class="list-group-item">
                     Para verificação de contraste Microsoft. Acesse:
                     <a
-                      href="https://learn.microsoft.com/pt-br/microsoft-edge/devtools-guide-chromium/accessibility/color-picker"                      
+                      href="https://learn.microsoft.com/pt-br/microsoft-edge/devtools-guide-chromium/accessibility/color-picker"
                       >Contraste Microsoft</a
                     >
                   </li>
                   <li class="list-group-item">
                     Para verificação de contraste Linux. Acesse:
-                    <a
-                      href="https://apps.kde.org/pt-br/kontrast/"                      
+                    <a href="https://apps.kde.org/pt-br/kontrast/"
                       >Contraste Linux</a
                     >
                   </li>
@@ -351,16 +359,15 @@
             </div>
           </div>
         </header>
-        <div class="row d-flex justify-content-center align-items-start">
-          <div class="col-md-6 d-flex justify-content-center align-items-start">
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-center">
             <figure
-              aria-label="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."
-              style="width: 60%"
+              class="figure-content"
+              aria-label="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."             
             >
               <img
                 src="./assets/img/image6.jpg"
-                alt="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."
-                style="width: 100%"
+                alt="Bebê sorridente em um lago rodeado de folhas verdes flutuando ao seu redor."                
               />
               <figcaption>
                 <p class="lead">
@@ -370,15 +377,14 @@
               </figcaption>
             </figure>
           </div>
-          <div class="col-md-6 d-flex justify-content-center align-items-start">
+          <div class="col-lg-6 d-flex justify-content-center">
             <figure
+              class="figure-content"
               aria-label="Bebê sorridente em um lago rodeado de folhas flutuando ao seu redor em escala de cinzas."
-              style="width: 60%"
             >
               <img
                 src="./assets/img/image6-escalacinza.jpg"
                 alt="Bebê sorridente em um lago rodeado de folhas flutuando ao seu redor em escala de cinzas."
-                style="width: 100%"
               />
               <figcaption>
                 <p class="lead">
@@ -424,12 +430,12 @@
           <div class="col">
             <ol class="list-group list-group-numbered">
               <li class="list-group-item">
-                Acesse o link para obter as orientações para integrar o VLibras
+                Acesse o link para obter as orientações para integrar o V-Libras
                 em seus sites. Acesse:
                 <a
-                  href="https://vlibras.gov.br/doc/widget/index.html?_ga=2.89578971.1514139829.1663673363-1938240529.1663673363"                 
+                  href="https://vlibras.gov.br/doc/widget/index.html?_ga=2.89578971.1514139829.1663673363-1938240529.1663673363"
                 >
-                  VLibras.gov
+                  V-Libras.gov
                 </a>
               </li>
             </ol>
@@ -449,7 +455,7 @@
           <div class="col">
             <ol class="list-group list-group-numbered">
               <li class="list-group-item">
-                Quer conhecer todas as normas de acessibilidade?
+                Quer conhecer todas as normas de acessibilidade? Acesse: 
                 <a href="https://www.w3.org/TR/WCAG21/">
                   Normas de Acessibilidade
                 </a>
@@ -458,7 +464,7 @@
           </div>
         </div>
       </section>
-      <section  id="validarDocumentoHtml">
+      <section id="validarDocumentoHtml">
         <header class="row mt-5">
           <div class="col">
             <div class="jumbotron">
@@ -473,12 +479,17 @@
           <div class="col">
             <ol class="list-group list-group-numbered">
               <li class="list-group-item">
-                Para validar práticas de acessibilidade em seu documento HTML,
-                acesse:
-                <a
-                  href="https://asesweb.governoeletronico.gov.br/"                 
-                >
+                Para validar práticas de acessibilidade em seu documento HTML com <strong>ASES</strong>.
+                Acesse:
+                <a href="https://asesweb.governoeletronico.gov.br/">
                   Acessar Avaliador e Simulador de Acessibilidade em Sítios
+                </a>
+              </li>
+              <li class="list-group-item">
+                Para validar práticas de acessibilidade em seu documento HTML com <strong>Access Monitor</strong>.
+                Acesse:
+                <a href="https://accessmonitor.acessibilidade.gov.pt/">
+                  Acessar Avaliador Access Monitor
                 </a>
               </li>
             </ol>
@@ -495,27 +506,36 @@
           </div>
         </header>
         <form class="d-flex-column gap-5" id="formulario-faleconosco">
-          <div class="form-group">
-            <label for="inputEmail">Insira seu melhor email para contato</label>
-            <input
-              type="email"
-              class="form-control mt-1"
-              id="inputEmail"
-              placeholder="Insira seu email..."
-            />
-          </div>
-          <div class="form-group mt-2">
-            <label for="inputMensagem">Insira a Mensagem</label>
-            <textarea
-              class="form-control mt-1"
-              id="inputMensagem"
-              rows="3"
-              placeholder="Insira sua mensagem..."
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary mt-3">
-            <span>Enviar</span>
-          </button>
+          <fieldset>
+            <legend>Dados para envio da mensagem</legend>
+            <div class="form-group">
+              <label for="inputEmail"
+                >Insira seu melhor email para contato</label
+              >
+              <input
+                type="email"
+                class="form-control mt-1"
+                id="inputEmail"
+                placeholder="Insira seu email..."
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="inputMensagem">Insira a Mensagem</label>
+              <textarea
+                class="form-control mt-1"
+                id="inputMensagem"
+                rows="3"
+                placeholder="Insira sua mensagem..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary mt-3"
+              title="Botão para enviar dados."
+            >
+              <span>Enviar</span>
+            </button>
+          </fieldset>
         </form>
       </section>
     </main>
